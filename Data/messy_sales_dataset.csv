@@ -1,0 +1,101 @@
+order_id,order_date,product,category,quantity,unit_price,region,delivery_status
+ORD001,2025-11-24,Printer,Electronics,1.0,5000,Abuja,Delivered
+ORD002,2025-03-13,Printer,Office,-1.0,5000,Lagos,Cancelled
+ORD003,2025-08-05,Laptop,Accessories,1.0,5000,Abuja,Cancelled
+ORD004,2025-11-05,Mouse,Office,1.0,50000,Ibadan,Delivered
+ORD005,2025-08-18,Laptop,Accessories,5.0,15000,Ibadan,Pending
+ORD006,2025-05-23,Keyboard,,2.0,10000,Lagos,Pending
+ORD007,2025-02-19,Headset,Electronics,3.0,15000,Lagos,Cancelled
+ORD008,2025-08-24,Monitor,Electronics,5.0,5000,Port Harcourt,Cancelled
+ORD009,2025-11-13,Mouse,Office,3.0,50000,Lagos,Delivered
+ORD010,2025-12-05,Laptop,Accessories,2.0,15000,Lagos,Pending
+ORD011,2025-05-23,Mouse,Electronics,4.0,15000,Port Harcourt,Delivered
+ORD012,2025-12-10,Headset,Office,3.0,5000,Abuja,Cancelled
+ORD013,2025-05-06, laptop ,Electronics,2.0,25000,Abuja,Cancelled
+ORD014,2025-06-16,Laptop,Electronics,1.0,10000,Ibadan,Pending
+ORD015,2025-02-03,Printer,Electronics,2.0,50000,Abuja,Cancelled
+ORD016,2025-09-13,Mouse,Electronics,4.0,25000,Abuja,Delivered
+ORD017,2025-10-15,Printer,Accessories,5.0,15000,Ibadan,Cancelled
+ORD018,2025-07-24,Mouse,Accessories,3.0,10000,Ibadan,Delivered
+ORD019,2025-01-25,Printer,Accessories,1.0,10000,Ibadan,Cancelled
+ORD020,2025-02-02,Headset,Electronics,4.0,25000,Port Harcourt,Cancelled
+ORD021,,Printer,Accessories,-1.0,5000,Port Harcourt,Cancelled
+ORD022,2025-06-24,Monitor,Accessories,1.0,15000,Ibadan,Delivered
+ORD023,2025-05-15,Headset,Electronics,5.0,10000,Port Harcourt,Cancelled
+ORD024,2025-09-17,Mouse,Electronics,5.0,10000,Abuja,Cancelled
+ORD025,2025-09-29,Keyboard,Electronics,1.0,50000,Lagos,Delivered
+ORD025,2025-09-29,Keyboard,Electronics,1.0,50000,Lagos,Delivered
+ORD027,2025-09-06,Mouse,Accessories,1.0,50000,Ibadan,Cancelled
+ORD028,2025-03-26,Headset,Electronics,3.0,50000,Abuja,Cancelled
+ORD029,2025-12-20,Monitor,Office,2.0,15000,Port Harcourt,Pending
+ORD030,2025-09-22,Mouse,Accessories,4.0,5000,Lagos,Pending
+ORD031,2025-01-11,Mouse,Accessories,5.0,50000,Abuja,Delivered
+ORD032,2025-02-06,Mouse,Electronics,-1.0,5000,Lagos,Pending
+ORD033,2025-02-06,Keyboard,Office,5.0,10000,Ibadan,Delivered
+ORD034,2025-10-04,Headset,Electronics,2.0,50000,Abuja,Pending
+ORD035,2025-07-28,Laptop,Office,2.0,5000,Ibadan,Pending
+ORD036,2025-08-05,Printer,Electronics,4.0,25000,Lagos,Delivered
+ORD037,2025-07-26,Laptop,Accessories,-1.0,15000,Abuja,Delivered
+ORD038,2025-10-02,Monitor,Accessories,4.0,10000,Port Harcourt,Pending
+ORD039,2025-05-08,Headset,Electronics,1.0,25000,Lagos,Cancelled
+ORD040,2025-10-04,Mouse,Accessories,1.0,5000,Ibadan,Pending
+ORD041,2025-09-04,Laptop,Accessories,,25000,Ibadan,Delivered
+ORD042,2025-07-19,Keyboard,Electronics,3.0,25000,Ibadan,Delivered
+ORD043,2025-04-08,Laptop,Accessories,3.0,10000,Lagos,Cancelled
+ORD044,2025-06-10,Headset,Electronics,1.0,5000,Abuja,Delivered
+ORD045,2025-09-18,Laptop,Accessories,1.0,10000,Lagos,Cancelled
+ORD046,2025-05-01,Headset,Accessories,4.0,5000,Lagos,Cancelled
+ORD047,2025-02-11,Headset,Accessories,4.0,50000,Port Harcourt,Pending
+ORD048,2025-04-15,Mouse,Electronics,-1.0,15000,Ibadan,Delivered
+ORD049,2025-12-10,Monitor,Electronics,-1.0,15000,Lagos,Delivered
+ORD050,2025-08-23,Laptop,Electronics,5.0,50000,Abuja,Cancelled
+ORD051,2025-05-16,Laptop,Accessories,2.0,15000,Port Harcourt,Pending
+ORD052,2025-03-22,Printer,Electronics,4.0,50000,Lagos,Cancelled
+ORD053,2025-10-11,Mouse,Electronics,3.0,5000,Lagos,Delivered
+ORD054,2025-10-11,Keyboard,Accessories,2.0,15000,Abuja,Cancelled
+ORD055,2025-06-25,Headset,Electronics,2.0,15000,Port Harcourt,Delivered
+ORD056,2025-02-17,Keyboard,Electronics,-1.0,25000,Lagos,Pending
+ORD057,2025-03-08,Mouse,Office,-1.0,15000,Ibadan,Cancelled
+ORD058,2025-12-28,Laptop,Electronics,4.0,50000,Lagos,Cancelled
+ORD059,2025-03-18,Keyboard,Accessories,5.0,5000,Abuja,Pending
+ORD060,2025-03-07,Keyboard,Electronics,1.0,15000,Port Harcourt,Delivered
+ORD061,2025-12-16,Keyboard,electronics,2.0,5000,Ibadan,Cancelled
+ORD062,2025-03-21,Mouse,Electronics,2.0,10000,Lagos,Delivered
+ORD063,2025-06-20,Keyboard,Accessories,4.0,10000,Lagos,Pending
+ORD064,2025-01-20,Mouse,Electronics,4.0,10000,Port Harcourt,Pending
+ORD065,2025-04-27,Printer,Accessories,2.0,5000,Ibadan,Pending
+ORD066,2025-05-23,Keyboard,Office,1.0,15000,Ibadan,Cancelled
+ORD067,2025-10-02,Laptop,Electronics,3.0,5000,Abuja,Cancelled
+ORD068,2025-05-16,Headset,Electronics,1.0,5000,Port Harcourt,Cancelled
+ORD069,2025-06-10,Headset,Electronics,4.0,50000,Ibadan,Cancelled
+ORD070,2025-04-08,Printer,Electronics,3.0,5000,Lagos,Cancelled
+ORD071,2025-10-03,Keyboard,Electronics,-1.0,10000,Lagos,Cancelled
+ORD072,2025-06-19,Printer,Electronics,5.0,15000,Port Harcourt,Cancelled
+ORD073,2025-06-08,Keyboard,Electronics,-1.0,25000,Port Harcourt,Cancelled
+ORD074,2025-03-07,Printer,Electronics,2.0,25000,Abuja,Cancelled
+ORD075,2025-10-19,Headset,Electronics,3.0,25000,Port Harcourt,Pending
+ORD076,2025-04-18,Headset,Office,4.0,50000,Port Harcourt, delivered 
+ORD077,2025-08-15,Headset,Electronics,4.0,10000,Abuja,Cancelled
+ORD078,2025-02-13,Printer,Office,3.0,50000,Port Harcourt,Delivered
+ORD079,2025-05-01,Mouse,Accessories,-1.0,15000,Abuja,Delivered
+ORD080,2025-01-24,Headset,Electronics,2.0,25000,Ibadan,Pending
+ORD081,2025-11-19,Printer,Office,5.0,10000,Ibadan,Pending
+ORD082,2025-07-24,Printer,Office,2.0,10000,Lagos,Delivered
+ORD083,2025-08-06,Printer,Accessories,2.0,10000,Ibadan,Delivered
+ORD084,2025-10-13,Monitor,Accessories,2.0,5000,Ibadan,Cancelled
+ORD085,2025-09-29,Keyboard,Electronics,5.0,50000,Ibadan,Cancelled
+ORD086,2025-08-17,Monitor,Electronics,2.0,25000,Abuja,Cancelled
+ORD087,2025-05-22,Printer,Accessories,5.0,25000,Port Harcourt,Pending
+ORD088,2025-02-09,Mouse,Electronics,-1.0,15000,Port Harcourt,Pending
+ORD089,2025-10-04,Mouse,Accessories,1.0,10000,Ibadan,Cancelled
+ORD090,2025-03-20,Laptop,Electronics,-1.0,10000,Ibadan,Pending
+ORD091,2025-10-05,Laptop,Accessories,4.0,25000,Ibadan,Pending
+ORD092,2025-10-27,Headset,Electronics,-1.0,5000,Ibadan,Delivered
+ORD093,2025-06-30,Monitor,Accessories,3.0,25000,Abuja,Pending
+ORD094,2025-04-23,Monitor,Electronics,3.0,25000,Ibadan,Pending
+ORD095,2025-12-09,Printer,Accessories,-1.0,25000,Ibadan,Delivered
+ORD096,2025-11-15,Monitor,Accessories,5.0,5000,Lagos,Delivered
+ORD097,2025-11-26,Monitor,Accessories,4.0,10000,Lagos,Pending
+ORD098,2025-07-14,Monitor,Electronics,3.0,10000,Port Harcourt,Pending
+ORD099,2025-05-23,Laptop,Electronics,4.0,15000,Lagos,Cancelled
+ORD100,2025-10-04,Mouse,Office,1.0,15000,Lagos,Cancelled
