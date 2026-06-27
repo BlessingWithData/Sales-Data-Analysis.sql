@@ -4,58 +4,93 @@
 --Objective: Analyze sales performance
 */
 
-------01. TOTAL REVENUE 
-SELECT 
-      SUM(quantity*unit_price) AS total_revenue 
+------01. OVERALL REALIZED REVENUE
+
+--- Realized Revenue
+
+SELECT SUM(quantity*unit_price) AS realized_revenue
 FROM final_sales_dataset
-WHERE quantity >0;
+WHERE quantity > 0
+      AND delivery_status = 'Delivered';
+
+--- Gross Revenue
+SELECT SUM(quantity*unit_price) AS gross_revenue
+FROM final_sales_dataset;
+
+-- Negative quantities
+SELECT SUM(quantity*unit_price) AS negative_quantities
+FROM final_sales_dataset
+WHERE quantity < 0;
 
 ------02. REVENUE BY REGION 
 SELECT 
       region,
-      SUM(quantity*unit_price) AS total_revenue 
+      SUM(quantity*unit_price) AS realized_revenue 
 FROM final_sales_dataset
 WHERE quantity > 0
+     AND delivery_status = 'Delivered'
 GROUP BY region 
-ORDER BY total_revenue DESC;
+ORDER BY realized_revenue DESC;
+
+--Order Volume by Region
+SELECT 
+      region,
+      COUNT(*) AS total_order
+FROM final_sales_dataset
+WHERE quantity > 0
+     AND delivery_status = 'Delivered'
+GROUP BY region 
+ORDER BY total_order DESC; 
+
+--Average Order Value by Region
+SELECT 
+      region,
+      SUM(quantity*unit_price)/ COUNT(*) AS avg_order_value
+FROM final_sales_dataset
+WHERE quantity > 0
+     AND delivery_status = 'Delivered'
+GROUP BY region;
+
+
 
 -----03. PRODUCT BY REVENUE
 SELECT 
       product,
-      SUM(quantity*unit_price) AS revenue 
+      SUM(quantity*unit_price) AS realized_revenue
 FROM final_sales_dataset
+WHERE quantity > 0
+     AND delivery_status = 'Delivered'
 GROUP BY product
-ORDER BY revenue DESC;
+ORDER BY realized_revenue DESC
+LIMIT 3;
 
 -----04. CATEGORY BY REVENUE
 SELECT 
-      category, 
-      SUM(quantity*unit_price) AS revenue 
+      category,
+      SUM(quantity*unit_price) AS realized_revenue
 FROM final_sales_dataset
+WHERE quantity > 0
+     AND delivery_status = 'Delivered'
 GROUP BY category
-ORDER BY revenue DESC;
+ORDER BY realized_revenue DESC;
 
-------05. MOST SOLD PRODUCT
-SELECT 
-      product,
-      SUM(quantity) AS total_quantity_sold
-FROM final_sales_dataset
-GROUP BY product
-ORDER BY total_quantity_sold DESC;
 
-------06. MONTHLY SALES TREND
-WITH monthly_sales AS (
+------05. MONTHLY SALES TREND
+WITH monthly_revenue AS (
       SELECT 
            DATE_TRUNC('month',order_date) AS month,
-           SUM(unit_price*quantity) AS total_revenue
+           SUM(unit_price*quantity) AS realized_revenue
       FROM final_sales_dataset
       WHERE quantity > 0
-      GROUP BY month
+          AND delivery_status = 'Delivered'
+      GROUP BY DATE_TRUNC('month',order_date)
 )
       SELECT month,
-             total_revenue,
-             DENSE_RANK()OVER(ORDER BY total_revenue DESC
-             ) AS revenue_rank
-      FROM monthly_sales;
+             realized_revenue,
+             LAG(realized_revenue) OVER(ORDER BY month) AS previous_month,
+             realized_revenue - LAG(realized_revenue) OVER(
+                  ORDER BY month) AS monthly_change
+      FROM monthly_revenue
+      ORDER BY month;
 
       

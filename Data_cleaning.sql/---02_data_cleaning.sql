@@ -53,8 +53,8 @@ WHERE ctid IN (
 
 ------- 3.HANDLING MISSING VALUES
 
-
-SELECT COUNT(*)
+---For order_date column
+SELECT *
 FROM sales_cleaning_backup
 WHERE order_date IS NULL;
 
@@ -63,22 +63,19 @@ WHERE order_date IS NULL;
 DELETE FROM sales_cleaning_backup
 WHERE order_date IS NULL;
 
-SELECT COUNT (*)
-FROM sales_cleaning_backup
-WHERE category IS NULL;
-
+--- For category column
 SELECT *
 FROM sales_cleaning_backup
 WHERE category IS NULL
 
--- replacing the null in product column is the best option since the correct category could
+-- replacing the null in category column is the best option since the correct category could
 --not be determined from existing data ,the missing value was replaced with "Unknown"
 UPDATE sales_cleaning_backup
 SET category = 'Unknown'
 WHERE category IS NULL;
 
-
-SELECT COUNT(*)
+---For quantity column
+SELECT *
 FROM sales_cleaning_backup
 WHERE quantity IS NULL;
 
@@ -129,12 +126,14 @@ SELECT
 FROM sales_cleaning_backup
 WHERE quantity < 0;
 
------Investigating this we can not  change it to positive
+-----Investigating this, we can not  change it to positive
 --value beacuse it is not an error so we just flag it 
 
  ALTER TABLE sales_cleaning_backup
  ADD COLUMN quantity_flag VARCHAR(50);
  
+  UPDATE sales_cleaning_backup
+  SET quantity =
      CASE 
           WHEN quantity < 0 THEN 'Negative quantity'
           ELSE 'Valid'
